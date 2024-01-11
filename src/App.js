@@ -148,7 +148,11 @@ const App = () => {
           <JarContent>
             <Fill fillPercentage={jar1FillPercentage} />
           </JarContent>
-          <p>{jar1Hours.toFixed(2)} hours</p>
+          <p>
+            {/* convert this into hrs and min */}
+            {Math.floor(jar1Hours)} hours {Math.floor((jar1Hours % 1) * 60)}{" "}
+            minutes
+          </p>
         </Jar>
 
         <Jar>
@@ -156,7 +160,11 @@ const App = () => {
           <JarContent>
             <Fill fillPercentage={jar2FillPercentage} />
           </JarContent>
-          <p>{jar2Hours.toFixed(2)} hours</p>
+          <p>
+            {/* convert this into hrs and min */}
+            {Math.floor(jar2Hours)} hours {Math.floor((jar2Hours % 1) * 60)}{" "}
+            minutes
+          </p>
           <Input
             type="number"
             placeholder="Enter minutes"
