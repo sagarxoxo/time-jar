@@ -141,6 +141,16 @@ const App = () => {
   return (
     <AppContainer>
       <h1>Read Book For 365 Hrs</h1>
+      <img
+        src="/logo_time_jar_for_read_book.jpg"
+        alt="logo"
+        style={{
+          width: "70px",
+          height: "70px",
+          borderRadius: "50%",
+          border: "3px solid #4caf50",
+        }}
+      />
 
       <JarContainer>
         <Jar>
@@ -180,7 +190,7 @@ const App = () => {
         {history
           .slice()
           .reverse()
-          .slice(0, 7)
+          .slice(0, 5)
           .map((item, index) => (
             <EditableHistoryItem key={index}>
               {`${item.value} minutes transferred on ${item.date}`}{" "}
